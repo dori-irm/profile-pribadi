@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi - Dori Irmawan</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 80px 0;
+    }
+    .profile-img {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border: 4px solid #3b82f6;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card-custom {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .badge-tech {
+      font-size: 0.85rem;
+      padding: 0.5em 0.8em;
+      margin: 0.2rem;
+    }
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Dori Irmawan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#biografi">Biografi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bahasa">Bahasa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobi">Hobi & Minat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero & Biografi Section -->
+  <section id="biografi" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4 text-center">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Foto Profil Dori Irmawan" class="rounded-circle profile-img">
+        </div>
+        <div class="col-md-8">
+          <span class="badge bg-primary mb-2 px-3 py-2">NIM: 2510075</span>
+          <h1 class="fw-bold display-5">Dori Irmawan</h1>
+          <p class="lead text-light opacity-75">Mahasiswa & Practical Network Specialist</p>
+          <hr class="border-primary my-3" style="width: 80px; border-width: 3px;">
+          <p class="fs-6 lh-lg text-slate-300">
+            Saya adalah seorang mahasiswa ilmu komputer yang berfokus pada arsitektur sistem jaringan enterprise, rekayasa perangkat lunak, dan analisis sistem komputer. Memiliki pengalaman praktis dalam konfigurasi perangkat keras jaringan tingkat lanjut serta pengembangan antarmuka web modern yang responsif dan terstruktur.
+          </p>
+          <div class="d-flex gap-2 mt-4">
+            <a href="https://github.com/dodre13" target="_blank" class="btn btn-outline-light btn-sm px-3">
+              <i class="bi bi-github me-1"></i> GitHub profil
+            </a>
+            <a href="#kontak" class="btn btn-primary btn-sm px-3">
+              <i class="bi bi-envelope me-1"></i> Hubungi Saya
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="container my-5">
+    
+    <!-- Keahlian (Skills) Section -->
+    <section id="keahlian" class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Keahlian Teknis & Kompetensi</h2>
+        <p class="text-muted">Penguasaan teknologi dalam pengoperasian jaringan, pemrograman, dan alat kustomisasi.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Technical Progress Bars -->
+        <div class="col-md-6">
+          <div class="card card-custom p-4 h-100">
+            <h4 class="h5 fw-bold mb-3"><i class="bi bi-cpu text-primary me-2"></i>Tingkat Kemahiran</h4>
+            
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">Enterprise Networking (MikroTik, Aruba, Ruijie)</span>
+                <span class="text-muted">90%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">Web Development (HTML5, CSS3, JavaScript)</span>
+                <span class="text-muted">85%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">Pemrograman (Python, C++)</span>
+                <span class="text-muted">80%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="mb-0">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">Dokumentasi & Topologi (Visio, LaTeX)</span>
+                <span class="text-muted">88%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges Stack -->
+        <div class="col-md-6">
+          <div class="card card-custom p-4 h-100">
+            <h4 class="h5 fw-bold mb-3"><i class="bi bi-tools text-primary me-2"></i>Teknologi & Hardware</h4>
+            <p class="text-muted small">Perangkat lunak, ekosistem perangkat keras, dan alat kustomisasi yang dikuasai:</p>
+            <div class="d-flex flex-wrap gap-1">
+              <span class="badge bg-dark badge-tech">MikroTik RouterOS</span>
+              <span class="badge bg-dark badge-tech">Aruba AP</span>
+              <span class="badge bg-dark badge-tech">Ruijie Reyee</span>
+              <span class="badge bg-dark badge-tech">DCN Switches</span>
+              <span class="badge bg-dark badge-tech">TP-Link / Aginet</span>
+              <span class="badge bg-secondary badge-tech">Git & GitHub</span>
+              <span class="badge bg-secondary badge-tech">Bootstrap 5</span>
+              <span class="badge bg-secondary badge-tech">Magisk & TWRP</span>
+              <span class="badge bg-secondary badge-tech">Samsung Odin</span>
+              <span class="badge bg-secondary badge-tech">Editing Foto Digital</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kemampuan Bahasa (Language Skills) Section -->
+    <section id="bahasa" class="mb-5">
+      <div class="card card-custom p-4">
+        <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bg-light bi-translate me-2"></i>Kemampuan Bahasa</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3 border rounded">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0 fw-bold">Bahasa Indonesia</h5>
+                <span class="badge bg-success">Penutur Asli (Native)</span>
+              </div>
+              <p class="text-muted small mb-2">Komunikasi profesional, penulisan laporan akademik, dan dokumentasi teknis.</p>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-3 border rounded">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0 fw-bold">Bahasa Inggris</h5>
+                <span class="badge bg-primary">Tingkat Lanjut (Professional)</span>
+              </div>
+              <p class="text-muted small mb-2">Membaca dokumentasi teknis, konfigurasi CLI, dan komunikasi teknis internasional.</p>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobi & Minat Section -->
+    <section id="hobi" class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Hobi & Minat Pendukung</h2>
+        <p class="text-muted">Aktivitas produktif dan kegemaran di luar kegiatan akademik.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-custom h-100 p-3 text-center">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-diagram-3"></i></div>
+              <h5 class="card-title fw-bold">Eksplorasi Jaringan</h5>
+              <p class="card-text text-muted small">Menguji arsitektur router, switch enterprise, serta pemetaan topologi jaringan fisik dan logis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-custom h-100 p-3 text-center">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-palette"></i></div>
+              <h5 class="card-title fw-bold">Desain & Editing Media</h5>
+              <p class="card-text text-muted small">Melakukan penyuntingan foto formal digital serta pembuatan elemen visual media interaktif.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-custom h-100 p-3 text-center">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-phone"></i></div>
+              <h5 class="card-title fw-bold">Modifikasi Firmware</h5>
+              <p class="card-text text-muted small">Mengamati arsitektur sistem operasi mobile Android melalui kustomisasi recovery dan optimasi perangkat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="mb-5">
+      <div class="card card-custom p-4 text-center bg-light">
+        <h3 class="h4 fw-bold mb-2">Mari Terhubung</h3>
+        <p class="text-muted mb-4">Terbuka untuk diskusi mengenai arsitektur jaringan, proyek web, dan kolaborasi akademik.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://github.com/dodre13" target="_blank" class="btn btn-outline-dark">
+            <i class="bi bi-github me-1"></i> GitHub: dodre13
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Dori Irmawan (NIM: 2510075). Dipublikasikan melalui GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
