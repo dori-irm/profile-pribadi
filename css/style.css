@@ -35,20 +35,23 @@ body {
   color: var(--text-muted-light);
 }
 
-/* Foto Profil */
+/* Foto Profil (Bingkai Potret Presisi) */
 .profile-img {
   width: 210px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 3px solid var(--accent-blue);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  height: 270px;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 16px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 4px rgba(59, 130, 246, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img:hover {
-  transform: scale(1.03);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5), 0 0 0 4px rgba(59, 130, 246, 0.6);
 }
+
 
 /* Cards & Hover Effect */
 .card-custom {
@@ -94,7 +97,8 @@ footer {
   }
 
   .profile-img {
-    width: 170px;
-    height: auto;
+    width: 175px;
+    height: 225px;
   }
 }
+
