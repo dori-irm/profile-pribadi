@@ -4,7 +4,7 @@ Proyek halaman web profil pribadi yang responsif menggunakan HTML5, CSS3, JavaSc
 
 ## Live Demo
 Akses halaman web secara online melalui tautan berikut:  
-[https://dori-irm.github.io/profil-pribadi/](https://dori-irm.github.io/profil-pribadi/)
+[https://dori-irm.github.io/profile-pribadi/](https://dori-irm.github.io/profile-pribadi/)
 
 ## Struktur Direktori
 - `index.html` — Struktur utama halaman web.
